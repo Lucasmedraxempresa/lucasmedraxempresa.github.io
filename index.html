@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>punctum - Free Variable Dot-Matrix Typeface | 5x7 Dot Font</title>
+<meta name="description" content="Punctum is a free variable dot-matrix typeface built on a 5x7 dot grid with two adjustable axes: dot size and dot shape. Download it for Windows and start using it in minutes.">
+<meta name="keywords" content="dot-matrix, font, open-font-license, pixel-font, typeface, variable-font, punctum, free font download">
+<meta name="author" content="punctum">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://github.com/Lucasmedraxempresa/punctum">
+<meta property="og:type" content="website">
+<meta property="og:title" content="punctum - Free Variable Dot-Matrix Typeface">
+<meta property="og:description" content="A free variable dot-matrix typeface. 5x7 dots, two axes: dot size and dot shape. 可变点阵字体">
+<meta property="og:url" content="https://github.com/Lucasmedraxempresa/punctum">
+<meta property="og:site_name" content="punctum">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="punctum - Free Variable Dot-Matrix Typeface">
+<meta name="twitter:description" content="A free variable dot-matrix typeface built on a 5x7 dot grid with adjustable dot size and dot shape.">
+<style>
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    color: #232a35;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+  }
+  .page {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 40px 22px 70px;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 6px rgba(16, 24, 40, 0.05), 0 14px 34px rgba(16, 24, 40, 0.07);
+    padding: 42px 38px 50px;
+  }
+  h1 {
+    font-size: 2.15rem;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: #0f172a;
+    margin: 0 0 14px;
+    font-weight: 800;
+  }
+  .lede {
+    font-size: 1.12rem;
+    color: #4a5568;
+    margin: 0 0 26px;
+  }
+  h2 {
+    font-size: 1.42rem;
+    line-height: 1.3;
+    color: #111827;
+    margin: 46px 0 14px;
+    font-weight: 750;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 1.1rem;
+    color: #1f2937;
+    margin: 28px 0 10px;
+    font-weight: 700;
+  }
+  p { margin: 0 0 16px; }
+  ul, ol { margin: 0 0 18px; padding-left: 24px; }
+  li { margin-bottom: 9px; }
+  a { color: #4338ca; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .cta-wrap { text-align: center; margin: 32px 0 8px; }
+  .cta {
+    display: inline-block;
+    padding: 17px 42px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    border-radius: 14px;
+    background-image: linear-gradient(135deg, #ff5f6d 0%, #ff9966 45%, #7b4397 100%);
+    box-shadow: 0 4px 10px rgba(123, 67, 151, 0.28), 0 12px 26px rgba(255, 95, 109, 0.24);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(123, 67, 151, 0.34), 0 18px 34px rgba(255, 95, 109, 0.3); }
+  .cta-note { font-size: 0.92rem; color: #6b7280; margin-top: 14px; }
+  .btn-secondary {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    border-radius: 12px;
+    background-image: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.26), 0 10px 22px rgba(6, 182, 212, 0.2);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn-secondary:hover { transform: translateY(-2px); }
+  .box {
+    background: #f4f6fb;
+    border-left: 4px solid #6366f1;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 22px 0;
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.05);
+  }
+  .box p:last-child { margin-bottom: 0; }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 22px 0 8px;
+  }
+  .tile {
+    flex: 1 1 220px;
+    background: #ffffff;
+    border: 1px solid #e6e9ef;
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.05);
+  }
+  .tile strong { display: block; color: #111827; margin-bottom: 4px; }
+  .tile span { font-size: 0.95rem; color: #4a5568; }
+  code {
+    background: #eef1f6;
+    padding: 2px 7px;
+    border-radius: 6px;
+    font-size: 0.92em;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  }
+  footer {
+    margin-top: 42px;
+    padding-top: 24px;
+    border-top: 1px solid #e6e9ef;
+    font-size: 0.92rem;
+    color: #6b7280;
+    text-align: center;
+  }
+  @media (max-width: 560px) {
+    .card { padding: 28px 20px 36px; border-radius: 12px; }
+    h1 { font-size: 1.65rem; }
+    h2 { font-size: 1.22rem; }
+    .cta { display: block; padding: 16px 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="card">
+
+    <h1>🎯 punctum - A Free Variable Dot-Matrix Typeface</h1>
+
+    <p class="lede">Punctum is a free dot-matrix typeface built on a 5×7 dot grid, with two adjustable axes: dot size and dot shape. It is a variable font, which means one single font file can give you many different looks, from tiny tight dots to big round ones.</p>
+
+    <div class="cta-wrap">
+      <a class="cta" href="https://github.com/Lucasmedraxempresa/punctum/releases" target="_blank" rel="noopener">⬇️ Download Punctum Now</a>
+      <p class="cta-note">Free to use. No account or payment required.</p>
+    </div>
+
+    <h2>📖 What Is Punctum?</h2>
+    <p>Punctum is a typeface, which is simply a font — the set of letter shapes your computer uses to display text. What makes Punctum different is that it is drawn entirely out of dots. Every letter is built on a grid that is 5 dots wide and 7 dots tall, the same way old computer screens and dot-matrix printers used to build letters.</p>
+    <p>Because Punctum is a <em>variable font</em>, it does not come as a dozen separate files. Instead, it comes as one file that contains a whole range of styles inside it. You can slide between them with two simple controls:</p>
+    <ul>
+      <li><strong>Dot size</strong> — makes each dot in the letter bigger or smaller, so the text can look light and airy or bold and chunky.</li>
+      <li><strong>Dot shape</strong> — changes the outline of each dot, so the letters can look sharp and technical or soft and rounded.</li>
+    </ul>
+    <p>You do not need any design degree or coding skill to use it. If you can pick a font in a dropdown menu, you can use Punctum.</p>
+
+    <h2>✨ What You Can Do With It</h2>
+    <div class="grid">
+      <div class="tile">
+        <strong>Design posters and flyers</strong>
+        <span>Give headings a retro screen or label-maker feel.</span>
+      </div>
+      <div class="tile">
+        <strong>Make game and app art</strong>
+        <span>Pixel-style lettering that fits small screens neatly.</span>
+      </div>
+      <div class="tile">
+        <strong>Style documents and slides</strong>
+        <span>Use it for titles, covers, and playful captions.</span>
+      </div>
+      <div class="tile">
+        <strong>Create logos and stickers</strong>
+        <span>Adjust dot size and shape until the wordmark looks right.</span>
+      </div>
+    </div>
+    <p>The two axes work together, so the same font can look like a receipt printer, a retro arcade machine, a modern tech label, or a soft rounded display face. You change the look by moving a slider — the letter shapes stay consistent and readable.</p>
+
+    <h2>🚀 Getting Started on Windows</h2>
+    <p>This is a font, not a program. You do not need to install anything complicated, and you do not need to run a setup wizard. You only need to download the font file and add it to Windows.</p>
+
+    <p style="margin-top: 22px;">
+      <a class="btn-secondary" href="https://github.com/Lucasmedraxempresa/punctum/releases" target="_blank" rel="noopener">⬇️ Get Punctum from the Releases Page</a>
+    </p>
+
+    <div class="box">
+      <p><strong>Download step:</strong> Visit this link to download the application.</p>
+    </div>
+
+    <ol>
+      <li>Click the download button above. Your browser will open the Punctum releases page.</li>
+      <li>On that page, find the newest release at the top of the list. It is usually marked as "Latest".</li>
+      <li>Click the font file in that release to save it to your computer. By default it will land in your <code>Downloads</code> folder.</li>
+      <li>Open the <code>Downloads</code> folder. You can get there quickly by pressing the Windows key, typing <code>Downloads</code>, and pressing Enter.</li>
+      <li>Right-click the font file and choose <strong>Install</strong> (or <strong>Install for all users</strong> if you want everyone on the computer to be able to use it).</li>
+      <li>Wait a few seconds. Windows will show a short confirmation when the font is ready.</li>
+      <li>Close and reopen any program that was already open — Word, PowerPoint, Photoshop, or anything else. New fonts only appear in apps after they restart.</li>
+      <li>Open the font menu in that program and look for <strong>Punctum</strong>. Select it and start typing.</li>
+    </ol>
+
+    <h3>If the file does not open with a right-click</h3>
+    <p>Some computers are set up so that double-clicking a font file opens a small preview window instead of installing it. If that happens, look at the top of the preview window for a button labelled <strong>Install</strong> and click it. The result is exactly the same.</p>
+
+    <h3>Using the variable settings</h3>
+    <p>Variable fonts need a program that supports variable settings to show their full range. Recent versions of Adobe apps, Figma, and many modern design tools have a small panel labelled "Variable" or "Variable Font" next to the font name. If you see it, you will find two sliders there — one for dot size and one for dot shape. If your program does not show that panel, the font will still work: it simply appears at its default setting.</p>
+
+    <h2>💻 What You Need</h2>
+    <ul>
+      <li><strong>Operating system:</strong> Windows 10 or Windows 11. Older versions such as Windows 8.1 and Windows 7 will also install standard font files without trouble.</li>
+      <li><strong>Disk space:</strong> A few megabytes at most. Font files are very small.</li>
+      <li><strong>Internet:</strong> Only needed to reach the download page. After that, the font works offline.</li>
+      <li><strong>Software:</strong> Any program that lets you choose a font. That includes Word, Excel, PowerPoint, Notepad, WordPad, Paint, and most design tools.</li>
+      <li><strong>No account, no licence key, no sign-up.</strong> The font is free and open.</li>
+    </ul>
+
+    <h2>💡 Tips for Getting the Best Result</h2>
+    <ul>
+      <li><strong>Use it large.</strong> Dot-matrix faces shine at bigger sizes, where each dot is clearly visible. Use Punctum for headlines, covers, and titles rather than long paragraphs.</li>
+      <li><strong>Start at the default.</strong> Install the font first, see how it looks, and only then start moving the dot size and dot shape sliders. It is much easier to judge the changes once you know the baseline.</li>
+      <li><strong>Try small dot sizes for a delicate look.</strong> Shrinking the dots makes the lettering feel lighter and more elegant, which works well on light backgrounds.</li>
+      <li><strong>Try round dots for a friendly look.</strong> Changing the dot shape softens the whole alphabet and makes it feel less mechanical.</li>
+      <li><strong>Check the spacing.</strong> Very large or very small dot settings can change how tightly letters sit together. If something looks crowded, add a little letter spacing in your program's text settings.</li>
+      <li><strong>Keep a copy of the file.</strong> Save the downloaded font somewhere safe, such as a fonts folder in your documents. If you ever move to a new computer, you can install it again in seconds.</li>
+    </ul>
+
+    <h2>❓ Common Questions</h2>
+    <h3>Is it really free?</h3>
+    <p>Yes. Punctum is released under an open font licence, which means you can use it in personal and commercial work at no cost. That is why it is hosted publicly on GitHub.</p>
+
+    <h3>Do I have to be a programmer to use GitHub?</h3>
+    <p>No. You only need to open the releases page, click the file, and install it the same way you would install any font. You never need to type commands or use a terminal.</p>
+
+    <h3>I installed it but my program cannot find it.</h3>
+    <p>Restart the program completely — closing the window is not always enough, so quit it from the taskbar and open it again. If it still does not appear, restart your computer, which forces Windows to refresh the list of installed fonts.</p>
+
+    <h3>Can I use it on a Mac or a phone?</h3>
+    <p>The download steps above are written for Windows. The font file itself is a standard format that works on other systems too, but the menu names and install steps will look different.</p>
+
+    <h3>Something is not working.</h3>
+    <p>Go back to the releases page and check that you picked the newest release and downloaded the font file rather than a source code archive. If the problem continues, you can open an issue on the repository and describe what you see.</p>
+
+    <h2>🤝 Help and Feedback</h2>
+    <p>Punctum is an open project, which means improvements come from people using it and reporting what they find. If a letter looks off at a particular dot size, if a symbol is missing, or if you have an idea for a new dot shape, the repository is the place to share it. Bug reports, suggestions, and examples of your work are all welcome.</p>
+    <p>If you simply want to say thanks, a star on the repository helps other people find the font.</p>
+
+    <h2>📄 Licence</h2>
+    <p>Punctum is distributed under an open font licence. You are free to use it in personal projects, client work, printed materials, apps, and games. Keep the licence file with the font when you pass it on to someone else, and do not sell the font file on its own.</p>
+
+    <footer>
+      <p><a href="https://github.com/Lucasmedraxempresa/punctum/releases" target="_blank" rel="noopener">Download Punctum</a> · Free and open dot-matrix typeface · 5×7 dot grid · 可变点阵字体</p>
+    </footer>
+
+  </div>
+</div>
+</body>
+</html>
